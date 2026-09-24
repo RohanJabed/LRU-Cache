@@ -7,7 +7,7 @@ using namespace std;
 
 void test(const string& label, int got, int expected) {
     bool pass = got == expected;
-    cout << (pass ? "Done" : "Denied") << label
+    cout << (pass ? "[PASS] " : "[FAIL] ") << label
          << ": got " << got << ", expected " << expected << "\n";
 }
 
